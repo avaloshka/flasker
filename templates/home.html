@@ -1,0 +1,8 @@
+<h1>My name is {{ first_name|capitalize }}</h1>
+<p>{{ stuff|striptags }}</p>
+<h1>My favorite pizza:</h1>
+{% for pizza in favorite_pizza  %}
+	<h3>{{ pizza }}</h3>
+{% endfor %}
+
+Although I prever <bold>{{ favorite_pizza.0 }}</bold>
